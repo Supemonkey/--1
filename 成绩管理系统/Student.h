@@ -7,6 +7,9 @@ class Student
 public:
 	Student(string n,int a,string s, int i,string p,string dn,double c,double m ,double e,double d);
 	~Student();
+	void showInfo();
+	void showSorce();
+	
 
 private:
 	int age;
