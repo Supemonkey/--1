@@ -9,6 +9,7 @@ public:
 	~Student();
 	void showInfo();
 	void showSorce();
+	Student();
 	
 
 private:

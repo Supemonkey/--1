@@ -1,10 +1,11 @@
-#include "Student.h"
+#include "statement.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 
-void stuCreate(Student *array, int n)
+void stuCreate(Student *array[], int n)
 {
 	int age;
 	string name;
@@ -22,9 +23,14 @@ void stuCreate(Student *array, int n)
 			>> id >> phoenNum >> dormitNum
 			>> chinScore >> mathScore
 			>> englScore >> datBScore;
-		array[i] =  Student(name, age, sex,
-			id, phoenNum, dormitNum
-			, chinScore, mathScore,
-			englScore, datBScore);
+		array[i] = new Student(name, age, sex,
+			id, phoenNum, dormitNum,
+			chinScore, mathScore, englScore, datBScore);
 	}
+	for (int i = 0; i < n; i++) {
+		array[i]->showInfo();
+
+	}
+	
+
 }

@@ -33,19 +33,27 @@ Student::~Student()
 
 void Student::showInfo()
 {
-	cout << name << " " << sex
-		<< age << " " << id
-		<< phoenNum << " " << dormitNum
-		<< endl;
+	cout << name << " " << sex<<" "
+		<< age << " " << id<<" "
+		<< phoenNum << " " << dormitNum<<" "
+		<< chinScore << " " << mathScore << " "
+				<< englScore << " " << datBScore<<" "
+				<< endl;
+	cout << "************HHHHHHHHHH" << endl;
 
 }
 
 void Student::showSorce()
 {
-	cout << name << " " << id
-		<< chinScore << " " << mathScore
-		<< englScore << " " << datBScore
+	cout << name << " " << id<<" "
+		<< chinScore << " " << mathScore<<" "
+		<< englScore << " " << datBScore<<" "
 		<< endl;
+	cout << "*****************FFFFFFFFFFFFFFF*******" << endl;
+}
+
+Student::Student()
+{
 }
 
 
