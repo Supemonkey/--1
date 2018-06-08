@@ -2,16 +2,17 @@
 #include <iostream>
 #include <string>
 using namespace std;
+#define UNUSED -404
 
 
 
 
 
-Student::Student(string n, 
-	int a, string s, 
+Student::Student(string n,
+	int a, string s,
 	int i, string p,
 	string dn, double c,
-	double m, double e, 
+	double m, double e,
 	double d)
 {
 	name = n;
@@ -33,27 +34,37 @@ Student::~Student()
 
 void Student::showInfo()
 {
-	cout << name << " " << sex<<" "
-		<< age << " " << id<<" "
-		<< phoenNum << " " << dormitNum<<" "
+	cout <<  name << " " <<  sex << " "
+		<<  age << " " << id << " "
+		<< phoenNum << " " << dormitNum << " "
 		<< chinScore << " " << mathScore << " "
-				<< englScore << " " << datBScore<<" "
-				<< endl;
+		<< englScore << " " << datBScore << " "
+		<< endl;
 	cout << "************HHHHHHHHHH" << endl;
 
 }
 
 void Student::showSorce()
 {
-	cout << name << " " << id<<" "
-		<< chinScore << " " << mathScore<<" "
-		<< englScore << " " << datBScore<<" "
+	cout << name << " " << id << " "
+		<< chinScore << " " << mathScore << " "
+		<< englScore << " " << datBScore << " "
 		<< endl;
 	cout << "*****************FFFFFFFFFFFFFFF*******" << endl;
 }
 
 Student::Student()
 {
+	this->age = UNUSED;
+	this->name = UNUSED;
+	this->sex = UNUSED;
+	this->id = UNUSED;
+	this->phoenNum = UNUSED;
+	this->dormitNum = UNUSED;
+	this->chinScore = UNUSED;
+	this->mathScore = UNUSED;
+	this->englScore = UNUSED;
+	this->datBScore = UNUSED;
 }
 
 
@@ -61,4 +72,4 @@ Student::Student()
 
 
 
-	
+
