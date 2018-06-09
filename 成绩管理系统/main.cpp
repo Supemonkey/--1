@@ -15,6 +15,11 @@ int main()
 	phead = pend = pnew = NULL;
 	phead=initStrt(phead,pend,pnew);
 	show(phead);
+	cout << "HHHHHHHHHHHHHHh" << endl;
+	addStrt(phead, pend, pnew);
+	//pe,pn并没有从inintstrt中return回来，会陪自动释放
+	show(phead);
+
 	system("pause");
 	return 0;
 }

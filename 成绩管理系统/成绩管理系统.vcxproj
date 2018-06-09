@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="stuAdd.cpp" />
     <ClCompile Include="stuCreate.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="stuShow.cpp" />

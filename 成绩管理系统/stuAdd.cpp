@@ -1,13 +1,12 @@
+#include "stuCreate.h"
 #include <iostream>
 #include <string>
 using namespace std;
 
-#include "Student.h"
-#include "stuCreate.h"
 
-
-Node *initStrt(Node *ph,Node *pe,Node *pn)
+Node *addStrt(Node *ph,Node *pe,Node *pn)
 {
+
 	int age;
 	string name;
 	string sex;
@@ -18,10 +17,11 @@ Node *initStrt(Node *ph,Node *pe,Node *pn)
 	double mathScore;
 	double englScore;
 	double datBScore;
+	while (ph->next != NULL) {
+		ph = ph->next;
+	}
+	pn = pe = ph;
 	pn = new Node;
-
-	//都接到设计为空节点不适用
-	ph = pe = pn;
 	while (1) {//输入0停止输入
 		cin >> name;
 		if (name == "0")break; //判断用户是否继续输入数据
@@ -38,6 +38,5 @@ Node *initStrt(Node *ph,Node *pe,Node *pn)
 	}
 	pe->next = NULL;
 
-	
 	return ph;
 }

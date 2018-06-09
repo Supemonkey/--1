@@ -9,4 +9,6 @@ void show(Node *h)
 		h->s.showSorce();
 		h = h->next;
 	}
+	h->s.showInfo();
+	h->s.showSorce();
 }

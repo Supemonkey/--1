@@ -40,7 +40,7 @@ void Student::showInfo()
 		<< chinScore << " " << mathScore << " "
 		<< englScore << " " << datBScore << " "
 		<< endl;
-	cout << "************HHHHHHHHHH" << endl;
+	cout << "************JJJJJJJJJJJJJJJ" << endl;
 
 }
 
