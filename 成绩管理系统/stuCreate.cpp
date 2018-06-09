@@ -1,11 +1,12 @@
-#include "statement.h"
 #include <iostream>
 #include <string>
-
 using namespace std;
 
+#include "Student.h"
+#include "stuCreate.h"
 
-void stuCreate(Student *array[], int n)
+
+Node *initStrt(Node *ph,Node *pe,Node *pn)
 {
 	int age;
 	string name;
@@ -17,20 +18,24 @@ void stuCreate(Student *array[], int n)
 	double mathScore;
 	double englScore;
 	double datBScore;
+	pn = new Node;
 
-	for (int i = 0; i < n; ++i) {
-		cin >> name >> age >> sex
+	//都接到设计为空节点不适用
+	ph = pe = pn;
+	while (1) {//输入0停止输入
+		cin >> name;
+		if (name == "0")break; //判断用户是否继续输入数据
+		cin >> age >> sex
 			>> id >> phoenNum >> dormitNum
 			>> chinScore >> mathScore
 			>> englScore >> datBScore;
-		array[i] = new Student(name, age, sex,
+		pn = new Node;
+		pn->s = Student(name, age, sex,
 			id, phoenNum, dormitNum,
 			chinScore, mathScore, englScore, datBScore);
+		pe->next = pn;
+		pe = pn;
 	}
-	for (int i = 0; i < n; i++) {
-		array[i]->showInfo();
-
-	}
-	
-
+	pe->next = NULL;
+	return ph;
 }

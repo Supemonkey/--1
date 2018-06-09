@@ -21,13 +21,10 @@
     <ClCompile Include="Student.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stuShow.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="stuCreate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stuAdd.cpp">
+    <ClCompile Include="stuShow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,7 +32,7 @@
     <ClInclude Include="Student.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="statement.h">
+    <ClInclude Include="stuCreate.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

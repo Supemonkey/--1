@@ -1,16 +1,12 @@
-#include "Student.h"
+#include <iostream>
 
+#include "stuCreate.h"
 
-void stuShowInfo(Student *array[], int n)
+void show(Node *h)
 {
-	for (int i = 0; i < n; ++i) {
-		array[i]->showInfo();
-	}
-}
-
-void stuShowSorce(Student *array[], int n)
-{
-	for (int i = 0; i < n; ++i) {
-		array[i]->showSorce();
+	while (h->next != NULL) {
+		h->s.showInfo();
+		h->s.showSorce();
+		h = h->next;
 	}
 }
