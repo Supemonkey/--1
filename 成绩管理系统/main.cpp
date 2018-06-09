@@ -13,12 +13,19 @@ int main()
 	Node s;
 	Node *phead, *pend, *pnew;
 	phead = pend = pnew = NULL;
+	string name;
 	phead=initStrt(phead,pend,pnew);
 	show(phead);
 	cout << "HHHHHHHHHHHHHHh" << endl;
-	addStrt(phead, pend, pnew);
-	//pe,pn并没有从inintstrt中return回来，会陪自动释放
-	show(phead);
+	//addStrt(phead, pend, pnew);
+	////pe,pn并没有从inintstrt中return回来，会陪自动释放
+	//show(phead);
+	while (1) {
+		cout << "请输入需要删除的姓名" << endl;
+		cin >> name;
+		nameDeletStrt(phead, name);
+		show(phead);
+	}
 
 	system("pause");
 	return 0;

@@ -4,11 +4,14 @@
 
 void show(Node *h)
 {
-	while (h->next != NULL) {
+	if (h->next != NULL) {
+		h = h->next;//可以设置异常抛出
+		while (h->next != NULL) {
+			h->s.showInfo();
+			//h->s.showSorce();
+			h = h->next;
+		}
 		h->s.showInfo();
-		h->s.showSorce();
-		h = h->next;
+		//h->s.showSorce();
 	}
-	h->s.showInfo();
-	h->s.showSorce();
 }

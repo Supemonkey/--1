@@ -67,6 +67,51 @@ Student::Student()
 	this->datBScore = UNUSED;
 }
 
+string Student::getName()
+{
+	return name;
+}
+
+int Student::getAge()
+{
+	return age;
+}
+
+string Student::getSex()
+{
+	return sex;
+}
+
+int Student::getId()
+{
+	return id;
+}
+
+string Student::getPhoenNum()
+{
+	return string();
+}
+
+string Student::getDormitNum()
+{
+	return dormitNum;
+}
+
+double Student::getMathScore()
+{
+	return mathScore;
+}
+
+double Student::getEnglScore()
+{
+	return englScore;
+}
+
+double Student::getdatBScore()
+{
+	return datBScore;
+}
+
 
 
 

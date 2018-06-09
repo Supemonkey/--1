@@ -10,6 +10,15 @@ public:
 	void showInfo();
 	void showSorce();
 	Student();
+	string getName();
+	int getAge();
+	string getSex();
+	int getId();
+	string getPhoenNum();
+	string getDormitNum();
+	double getMathScore();
+	double getEnglScore();
+	double getdatBScore();
 	
 
 private:
