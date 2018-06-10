@@ -10,15 +10,28 @@ public:
 	void showInfo();
 	void showSorce();
 	Student();
+
 	string getName();
 	int getAge();
 	string getSex();
 	int getId();
 	string getPhoenNum();
 	string getDormitNum();
+	double getChinScore();
 	double getMathScore();
 	double getEnglScore();
 	double getdatBScore();
+
+	void modiName(string);
+	void modiAge(int);
+	void modiSex();
+	void modiId();
+	void modiPN();
+	void modiDN();
+	void modiCS();
+	void modiMS();
+	void modiES();
+	void modiBS();
 	
 
 private:

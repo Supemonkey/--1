@@ -97,6 +97,11 @@ string Student::getDormitNum()
 	return dormitNum;
 }
 
+double Student::getChinScore()
+{
+	return chinScore;
+}
+
 double Student::getMathScore()
 {
 	return mathScore;
@@ -110,6 +115,49 @@ double Student::getEnglScore()
 double Student::getdatBScore()
 {
 	return datBScore;
+}
+
+
+
+void Student::modiName(string name)
+{
+	this->name = name;
+}
+
+void Student::modiAge()
+{
+}
+
+void Student::modiSex()
+{
+}
+
+void Student::modiId()
+{
+}
+
+void Student::modiPN()
+{
+}
+
+void Student::modiDN()
+{
+}
+
+void Student::modiCS()
+{
+}
+
+void Student::modiMS()
+{
+}
+
+void Student::modiES()
+{
+}
+
+void Student::modiBS()
+{
 }
 
 
