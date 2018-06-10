@@ -120,6 +120,7 @@
     <ClCompile Include="stuCreate.cpp" />
     <ClCompile Include="stuDelete.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="stuModifi.cpp" />
     <ClCompile Include="stuShow.cpp" />
   </ItemGroup>
   <ItemGroup>

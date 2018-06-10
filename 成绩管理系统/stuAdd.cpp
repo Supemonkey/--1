@@ -6,7 +6,7 @@ using namespace std;
 
 Node *addStrt(Node *ph,Node *pe,Node *pn)
 {
-
+	//与创建函数是否可以系统函数重载，后期完成。
 	int age;
 	string name;
 	string sex;
@@ -36,6 +36,10 @@ Node *addStrt(Node *ph,Node *pe,Node *pn)
 		pe->next = pn;
 		pe = pn;
 	}
+	pn = new Node;
+	pn->s = Student();//设计一个为节点，为未使用
+	pe->next = pn;
+	pe = pn;
 	pe->next = NULL;
 
 	return ph;
