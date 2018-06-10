@@ -10,20 +10,18 @@ void nameDeletStrt(Node *pfront ,string n)
 	pfront = pfront->next;//第一个节点为空，不是用第一个节点
 	name = pfront->s.getName();//解决不会进入循环中
 	
-	while (name != n) {
-		pfront = pfront->next;
+	while (pfront->next != NULL) {
+		if (name == n) {
+			pback->next = pfront->next;
+			delete (pfront);//删除指针，释放空间。
+			cout << "数据删除成功！" << endl;
+			return;
+		}
 		pback = pfront;
+		pfront = pfront->next;
 		name = pfront->s.getName();
 	}
-	if (pfront->next == NULL) {
-		pback = NULL;
-		cout << "1删除成功" << endl;
-	}
-	else {
-		pback->next = pfront->next;
-		pfront->next = NULL;
-		cout << "2删除成功" << endl;
-	}
+	cout << "不存在数据，无法删除!" << endl;
 	
 	return;
 }
