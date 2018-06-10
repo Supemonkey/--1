@@ -36,6 +36,10 @@ Node *initStrt(Node *ph,Node *pe,Node *pn)
 		pe->next = pn;
 		pe = pn;
 	}
+	pn = new Node;
+	pn->s = Student();//设计一个为节点，为未使用
+	pe->next = pn;
+	pe = pn;
 	pe->next = NULL;
 
 	
