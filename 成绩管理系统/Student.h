@@ -24,14 +24,14 @@ public:
 
 	void modiName(string);
 	void modiAge(int);
-	void modiSex();
-	void modiId();
-	void modiPN();
-	void modiDN();
-	void modiCS();
-	void modiMS();
-	void modiES();
-	void modiBS();
+	void modiSex(string);
+	void modiId(int);
+	void modiPN(string);
+	void modiDN(string);
+	void modiCS(double);
+	void modiMS(double);
+	void modiES(double);
+	void modiBS(double);
 	
 
 private:
@@ -46,4 +46,3 @@ private:
 	double englScore;
 	double datBScore;
 };
-

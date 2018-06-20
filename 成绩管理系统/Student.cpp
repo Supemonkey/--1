@@ -1,4 +1,4 @@
-#include "Student.h"
+#include                "Student.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -15,16 +15,16 @@ Student::Student(string n,
 	double m, double e,
 	double d)
 {
-	name = n;
-	age = a;
-	sex = s;
-	id = i;
-	phoenNum = p;
-	dormitNum = dn;
-	chinScore = c;
-	mathScore = m;
-	englScore = e;
-	datBScore = d;
+	name            = n;
+	age             = a;
+	sex             = s;
+	id              = i;
+	phoenNum        = p;
+	dormitNum       = dn;
+	chinScore       = c;
+	mathScore       = m;
+	englScore       = e;
+	datBScore       = d;
 }
 
 Student::~Student()
@@ -34,32 +34,32 @@ Student::~Student()
 
 void Student::showInfo()
 {
-	cout <<  name << " " <<  sex << " "
-		<<  age << " " << id << " "
-		<< phoenNum << " " << dormitNum << " "
+	cout <<  name <<    " " <<  sex << " "
+		<<  age <<      " " << id << " "
+		<< phoenNum <<  " " << dormitNum << " "
 		<< chinScore << " " << mathScore << " "
 		<< englScore << " " << datBScore << " "
 		<< endl;
-	cout << "************JJJJJJJJJJJJJJJ" << endl;
+	cout <<             "************JJJJJJJJJJJJJJJ" << endl;
 
 }
 
 void Student::showSorce()
 {
-	cout << name << " " << id << " "
+	cout << name <<     " " << id << " "
 		<< chinScore << " " << mathScore << " "
 		<< englScore << " " << datBScore << " "
 		<< endl;
-	cout << "*****************FFFFFFFFFFFFFFF*******" << endl;
+	cout <<             "*****************FFFFFFFFFFFFFFF*******" << endl;
 }
 
 Student::Student()
 {
-	this->age = UNUSED;
-	this->name = UNUSED;
-	this->sex = UNUSED;
-	this->id = UNUSED;
-	this->phoenNum = UNUSED;
+	this->age       = UNUSED;
+	this->name      = UNUSED;
+	this->sex       = UNUSED;
+	this->id        = UNUSED;
+	this->phoenNum  = UNUSED;
 	this->dormitNum = UNUSED;
 	this->chinScore = UNUSED;
 	this->mathScore = UNUSED;
@@ -89,7 +89,7 @@ int Student::getId()
 
 string Student::getPhoenNum()
 {
-	return string();
+	return phoenNum;
 }
 
 string Student::getDormitNum()
@@ -121,48 +121,50 @@ double Student::getdatBScore()
 
 void Student::modiName(string name)
 {
-	this->name = name;
+	this->name= name;
 }
 
-void Student::modiAge()
+void Student::modiAge(int age)
 {
+	this->age = age;
 }
 
-void Student::modiSex()
+void Student::modiSex(string sex)
 {
+	this->sex = sex;
 }
 
-void Student::modiId()
+void Student::modiId(int id)
 {
+	this->id = id;
 }
 
-void Student::modiPN()
+void Student::modiPN(string phoenNum)
 {
+	this->phoenNum = phoenNum;
 }
 
-void Student::modiDN()
+void Student::modiDN(string dormitNum)
 {
+	this->dormitNum = dormitNum;
 }
 
-void Student::modiCS()
+void Student::modiCS(double chinScore)
 {
+	this->chinScore = chinScore;
 }
 
-void Student::modiMS()
+void Student::modiMS(double mathScore)
 {
+	this->mathScore = mathScore;
 }
 
-void Student::modiES()
+void Student::modiES(double englScore)
 {
+	this->englScore = englScore;
 }
 
-void Student::modiBS()
+void Student::modiBS(double datBScore)
 {
+	this->datBScore = datBScore;
 }
-
-
-
-
-
-
-
